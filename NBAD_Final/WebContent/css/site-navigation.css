@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 4, 2015, 9:44:56 PM
+    Author     : siddharth
+*/
+#navigation {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	background-color: #707070;
+	font-size: 16px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	filter: none;
+	-moz-opacity: 100%;
+}
+
+#navigation ul {
+	margin: 0;
+	padding: 8px 0;
+	list-style: none;
+	height: auto;
+}
+
+#navigation li {
+	display: inline;
+	padding: 8px;
+}
+
+#navigation a {
+	color: #FFF;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: #c0c0c0;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+#navigation li .active {
+	color: #c0c0c0;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Mobile Website1</display-name>
+  <servlet>
+    <servlet-name>CatalogController</servlet-name>
+    <servlet-class>controllers.CatalogController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>controllers.OrderController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CatalogController</servlet-name>
+    <url-pattern>/CatalogController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/OrderController</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserController</display-name>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>controllers.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  
+  <security-role>
+      <description>customers</description>
+      <role-name>customer</role-name>
+  </security-role>
+  
+  <security-role>
+      <description>Admin</description>
+      <role-name>admin</role-name>
+  </security-role>
+  
+  
+  <security-constraint>
+      <web-resource-collection>
+          <web-resource-name>Protected sites</web-resource-name>
+          <url-pattern>/order.jsp</url-pattern>
+          <url-pattern>/payment.jsp</url-pattern>
+      </web-resource-collection>
+      
+      <auth-constraint>
+          <role-name>customer</role-name>
+          <role-name>admin</role-name>
+          <role-name>*</role-name>
+      </auth-constraint>
+  
+      <user-data-constraint>
+          <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+      </user-data-constraint>
+      
+  </security-constraint>
+  
+  
+</web-app>

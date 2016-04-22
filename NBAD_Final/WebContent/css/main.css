@@ -1,0 +1,141 @@
+.myheader {
+	background: orange;
+	width: 1200px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mybody {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #E7E5E5;
+}
+
+.navigation {
+	border-radius: 1em;
+	color: #707070;
+}
+
+.centerbody {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 600px;
+	background-color: rgba(255, 255, 255, 0.5);;
+	padding: 5px;
+}
+
+.centerbody1 {
+	width: 19%;
+	height: 100%;
+	float: left;
+	font-size: 20px;
+	border-radius: 1em;
+	margin-right: 5px;
+	background-color: yellow;
+}
+
+.centerbody1 a {
+	color: #000000;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.centerbody1 a:hover {
+	color: #c0c0c0;
+	border-radius: 20px;
+	font-weight: bold;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.centerbody1 a active {
+	color: #c0c0c0;
+	border-radius: 20px;
+	font-weight: bold;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+.centerbody2 {
+	width: 80%;
+	float: left;
+	height: 100%;
+	padding-left:5px;
+	overflow: auto;
+	border-radius: 1em;
+	background-color: white;
+}
+
+.myfooter {
+	background: black;
+	width: 100%;
+	height: 50px;
+	color: white;
+}
+
+.mybutton {
+	width: 150px;
+	height: 40px;
+	color: white;
+	font-size: large;
+	background-color: #00b7b7;
+}
+
+.mytableheader {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.alignright {
+	margin-left: auto;
+}
+
+.alignleft {
+	margin-right: auto;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logindiv {
+	margin-left: auto;
+	text-align: right;
+}
+
+.breadcrumb {
+	margin-left: auto;
+	text-align: right;
+}
+
+.logo {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.tablespef {
+	border: 1;
+}
+
+#carttable {
+	width: 100%;
+}
+
+#carttable td .seventy {
+	width: 70%;
+}
+
+#carttable td .ten {
+	width: 10%;
+}
